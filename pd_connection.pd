@@ -6,7 +6,7 @@
 #X text 164 87 3 Set OSC Addresses (routing osc data;
 #X text 155 26 Key Settings;
 #X floatatom 43 194 5 0 0 0 - - - 0;
-#N canvas 68 634 623 462 oscReceive 1;
+#N canvas 1798 720 623 462 oscReceive 1;
 #X obj 30 130 netreceive -u -b;
 #X msg 53 89 listen 0;
 #X text 127 89 stop listening;
@@ -520,7 +520,7 @@
 #X msg 1051 846 1 25 \, 0 100 75;
 #X obj 329 878 r One_Timbre;
 #X obj 938 882 r Two_Timbre;
-#X msg 189 928 0.1;
+#X floatatom 224 922 5 0 0 0 - - - 0;
 #X connect 6 0 10 0;
 #X connect 8 0 9 0;
 #X connect 10 0 13 0;
@@ -931,4 +931,4 @@
 #X connect 421 0 423 0;
 #X connect 422 0 388 0;
 #X connect 422 0 391 0;
-#X connect 423 0 367 1;
+#X connect 423 0 361 1;
