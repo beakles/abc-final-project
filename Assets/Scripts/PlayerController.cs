@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         //*************
 
         //************* Send the message to the client...
-        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/master", 1);
+        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/master", 375);
         //*************
 
         animator = GetComponent<Animator>();

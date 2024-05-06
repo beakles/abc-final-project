@@ -92,6 +92,9 @@ public class PlayerOrb : MonoBehaviour
         {
             // Play a dull impact noise
             isShooting = false;
+            //************* Send the message to the client...
+            OSCHandler.Instance.SendMessageToClient ("pd", "/unity/ground", 1);
+            //*************
         }
 
         if (collision.gameObject.CompareTag("Enemy"))
@@ -107,6 +110,9 @@ public class PlayerOrb : MonoBehaviour
         {
             // Baa
             isShooting = false;
+            //************* Send the message to the client...
+            OSCHandler.Instance.SendMessageToClient ("pd", "/unity/ground", 1);
+            //*************
         }
     }
 }

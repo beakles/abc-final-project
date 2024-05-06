@@ -3,7 +3,8 @@
 public class GameMultiplier : MonoBehaviour
 {
     public static float gameMultiplier = 2.5f;
-    public static float one_timbre = 0.1f;
+    public static float oneTimbre = 0.1f;
+    public static int gameTempo = 375;
 
     // Update is called once per frame
     void Update()

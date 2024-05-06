@@ -32,6 +32,9 @@ public class PlayerShoot : MonoBehaviour
         if (isFiring && activeOrbs < maxOrbs)
         {
             SpawnOrb();
+            //************* Send the message to the client...
+            OSCHandler.Instance.SendMessageToClient ("pd", "/unity/fire", 1);
+            //*************
         }
     }
 
