@@ -1,1 +1,1 @@
-CMPM 151 - NES Sound Design Patch - Group ABC
+CMPM 151 - Final Project - Group ABC
