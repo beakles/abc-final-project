@@ -8,6 +8,10 @@ public class BubbleWoolScript : MonoBehaviour
         {
             GameMultiplier.gameMultiplier += 2.5f;
             gameObject.SetActive(false);
+
+            //************* Send the message to the client...
+            OSCHandler.Instance.SendMessageToClient ("pd", "/unity/puff", 1);
+            //*************
         }
     }
 }

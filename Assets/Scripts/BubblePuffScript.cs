@@ -28,6 +28,10 @@ public class BubblePuffScript : MonoBehaviour
             //************* Send the message to the client...
             OSCHandler.Instance.SendMessageToClient ("pd", "/unity/tempo", GameMultiplier.gameTempo);
             //*************
+
+            //************* Send the message to the client...
+            OSCHandler.Instance.SendMessageToClient ("pd", "/unity/puff", 1);
+            //*************
         }
     }
 }
