@@ -9,14 +9,14 @@ public class BubblePuffScript : MonoBehaviour
             GameMultiplier.gameMultiplier += 0.5f;
             GameMultiplier.oneTimbre += 0.05f;
 
-            GameMultiplier.gameTempo -= 10;
+            GameMultiplier.gameTempo -= 3;
 
             if (GameMultiplier.oneTimbre > 0.9f) {
                 GameMultiplier.oneTimbre = 0.9f;
             }
 
-            if (GameMultiplier.gameTempo < 200) {
-                GameMultiplier.gameTempo = 200;
+            if (GameMultiplier.gameTempo < 100) {
+                GameMultiplier.gameTempo = 100;
             }
 
             gameObject.SetActive(false);
