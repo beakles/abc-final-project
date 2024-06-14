@@ -38,6 +38,13 @@ public class PlayerController : MonoBehaviour
         OSCHandler.Instance.SendMessageToClient ("pd", "/unity/tempo", GameMultiplier.gameTempo);
 
         OSCHandler.Instance.SendMessageToClient ("pd", "/unity/drum_light", 1);
+        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/drum_heavy", 0);
+        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/note_c", 0);
+        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/note_d", 0);
+        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/note_e", 0);
+        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/note_f", 0);
+        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/note_g", 0);
+        OSCHandler.Instance.SendMessageToClient ("pd", "/unity/note_a", 0);
         //*************
 
         animator = GetComponent<Animator>();
