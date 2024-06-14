@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         {
             isSwimming = true;
         }
-        else
+        else if (!IsSwimming() || Input.GetButtonUp("Jump"))
         {
             isSwimming = false;
         }
@@ -78,7 +78,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonUp("Jump"))
         {
             isJumping = false;
-            isSwimming = false;
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -138,6 +137,7 @@ public class PlayerController : MonoBehaviour
     void Swim()
     {
         playerRigidbody2D.velocity = new Vector2(playerRigidbody2D.velocity.x, agility);
+        Debug.Log("Swim");
     }
 
     void Jump()
@@ -151,6 +151,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            Debug.Log("Jump_Max");
             jumpTimeCounter = jumpTime;
             isJumping = false;
         }
