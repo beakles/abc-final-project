@@ -25,7 +25,7 @@ public class BubblePuffScript : MonoBehaviour
 
             gameObject.SetActive(false);
 
-            if (GameMultiplier.gameTempo <= 120) {
+            if (GameMultiplier.gameTempo <= 135) {
                 OSCHandler.Instance.SendMessageToClient ("pd", "/unity/drum_heavy", 1);
             } 
             
